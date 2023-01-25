@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SwordDamage_Console
+namespace WeaponDamage_6
 {
     internal class SwordDamage
     {
@@ -73,9 +73,7 @@ namespace SwordDamage_Console
             Damage = BASE_DAMAGE;
 
             Damage = (int)(Roll * magicMultiplier) + BASE_DAMAGE + FLAME_DAMAGE;
-            if (Flaming) Damage += FLAME_DAMAGE;
-            Debug.WriteLine($"CalculateDamage finished: {Damage} (roll: {Roll})");
-
+            if (Flaming) Damage += FLAME_DAMAGE;        
         }
 
         /// <summary>
