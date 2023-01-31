@@ -8,7 +8,7 @@ namespace WeaponDamage
 {
     internal abstract class WeaponDamage
     {
-        
+
         public int Damage { get; protected set; }
         private int roll;
 
@@ -57,14 +57,20 @@ namespace WeaponDamage
         }
 
         /// <summary>
-        /// Calculates the damage based on the current properties.
+        /// The constructor calculated damage based on default Magic 
+        /// and Flaming values and a starting 3d6 roll.
         /// </summary>
-        protected abstract void CalculateDamage();
-
+        /// <param name="startingRoll">Starting 3d6 roll</param>
         public WeaponDamage(int startingRoll)
         {
             roll = startingRoll;
             CalculateDamage();
         }
+        /// <summary>
+        /// Calculates the damage based on the current properties.
+        /// </summary>
+        protected abstract void CalculateDamage();
+
+
     }
 }

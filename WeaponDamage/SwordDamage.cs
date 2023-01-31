@@ -12,12 +12,6 @@ namespace WeaponDamage
         private const int BASE_DAMAGE = 3;
         private const int FLAME_DAMAGE= 2;
 
-
-        /// <summary>
-        /// The constructor calculated damage based on default Magic 
-        /// and Flaming values and a starting 3d6 roll.
-        /// </summary>
-        /// <param name="startingRoll">Starting 3d6 roll</param>
         public SwordDamage(int startingRoll) : base(startingRoll) { }
 
         protected override void CalculateDamage()
@@ -30,9 +24,6 @@ namespace WeaponDamage
             base.Damage = (int)(Roll * magicMultiplier) + BASE_DAMAGE + FLAME_DAMAGE;
             if (base.Flaming) base.Damage += FLAME_DAMAGE;        
         }
-
-        
-
         
     }
 }

@@ -13,12 +13,6 @@ namespace WeaponDamage
         private const decimal MAGIC_MULTIPLIER = 2.5M;
         private const decimal FLAME_DAMAGE = 1.25M;
 
-        /// <summary>
-        /// The constructor calculated damage based on default Magic 
-        /// and Flaming values and a starting 3d6 roll.
-        /// </summary>
-        /// <param name="startingRoll">Starting 3d6 roll</param>
-
         public ArrowDamage(int startingRoll) : base(startingRoll) { }
 
         protected override void CalculateDamage()
