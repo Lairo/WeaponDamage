@@ -36,7 +36,7 @@ namespace WeaponDamage
                         arrowDamage.Roll = RollDice(1);
                         arrowDamage.Magic = (key == '1' || key == '3');
                         arrowDamage.Flaming = (key == '2' || key == '3');
-                        Console.WriteLine($"\nRolled {arrowDamage.Roll} for {arrowDamage.Damage} HP\n");
+                        Console.WriteLine($"\nRolled {arrowDamage.Roll} for {arrowDamage.Damage} HP\n");                        
                         break;
 
                     default:
