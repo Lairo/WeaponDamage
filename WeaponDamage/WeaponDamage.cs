@@ -70,7 +70,5 @@ namespace WeaponDamage
         /// Calculates the damage based on the current properties.
         /// </summary>
         protected abstract void CalculateDamage();
-
-
     }
 }

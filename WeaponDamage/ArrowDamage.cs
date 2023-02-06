@@ -18,12 +18,10 @@ namespace WeaponDamage
         protected override void CalculateDamage()
         {
             decimal baseDamage = Roll * BASE_MULTIPLIER;
-            if (base.Magic) baseDamage *= MAGIC_MULTIPLIER;
-            if (base.Flaming) base.Damage = (int)Math.Ceiling(baseDamage + FLAME_DAMAGE);
-            else base.Damage = (int)Math.Ceiling(baseDamage);
+            if (Magic) baseDamage *= MAGIC_MULTIPLIER;
+            if (Flaming) Damage = (int)Math.Ceiling(baseDamage + FLAME_DAMAGE);
+            else Damage = (int)Math.Ceiling(baseDamage);
 
         }
-
-        
     }
 }
